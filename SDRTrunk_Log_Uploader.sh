@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Configuration
-NODE=0
-REGION=0
+NODE=0 # Identifies which physical scanner recording node is sending data
+REGION=0 # Identifies which geographical region / radio system the data is for
 LOG_FILE_DIR="/home/user/SDRTrunk/event_logs"
 STAGE_DIR="/tmp/SDRTrunk_staging"
 STATE_FILE="/tmp/SDRTrunk_Log_Uploader.state"
-API_URL="http://scanner.wilsonit.net/api/inbox_sdrtlogs.php"
+API_URL="<your_URL>"
 
 # ---------------------------------------------------------------------------
 # AWK PROGRAM
