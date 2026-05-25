@@ -1,0 +1,10 @@
+[Unit]
+Description=SDRTrunk Log Uploader
+After=network.target
+
+[Service]
+Type=oneshot
+User=user
+ExecStart=/home/user/scripts/SDRTrunk_Log_Uploader.sh
+StandardOutput=append:/home/user/log/SDRTrunk_Log_Uploader.log
+StandardError=append:/home/user/log/SDRTrunk_Log_Uploader.log
